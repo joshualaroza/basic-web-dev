@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <title>First Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    
+    <video poster="wallpaperflare.com_wallpaper.jpg" id="bgvid" playsinline autoplay muted loop>
+       
+      <source src="bgvid cp.mp4" type="video/mp4">
+      
+      </video>
+    <header class="custom_header">
+        <nav>
+            <ul class="custom_header_menu">
+                <li class="custom_header_menu_items"><a href="#Home">Home</a></li>
+                <li class="custom_header_menu_items"><a href="#About Me">About Me</a></li>
+                <li class="custom_header_menu_items"><a href="#Contact Me">Contact Me</a></li>
+               
+            </ul>
+
+        </nav>
+        <div class="custom_header_text">
+            <h1>Visual Studio Code Project</h1>
+            <p>WELCOME</p>
+        </div>
+    </header>
+    <main>
+        <p class="section_about_me_heading">About Me</p>
+        <section class="section_about_me">
+            <div class="section_about_me_img">
+                <source src="okk.png" id=".section_about_me_img"> 
+            </div>
+            <div class="section_about_me_desc">
+            <h2> Hi!
+                <p>Im Exequiel Joshua M Laroza, im taking the course Library Information Science</p>
+            </h2>
+            </div>
+        </section>
+        <p class="section_contact_me_heading">Contact Me</p>
+        <section class="section_contact_me">
+            <form class="section_contact_me_form">
+                <div>
+                    <input type="text" class="section_contact_me_input"
+                    placeholder="Your full name...">
+                </div>
+                <div>
+                    <input type="text" class="section_contact_me_input"
+                    placeholder="Your email...">
+                </div>
+                <div>
+                    <textarea class="section_contact_me_textarea"
+                        placeholder="Send me a message...">
+                    </textarea>
+                </div>
+                <div>
+                    <input class="section_contact_me_submit" type="submit" value="Send Me A Message">
+                </div>
+            </form>
+        </section>
+      
+    </main>
+    <style>
+        body {
+          padding: 25px;
+          background-color: rgb(99, 99, 99);
+          color: black;
+          font-size: 25px;
+        }
+        .dark-mode {
+          background-color: black;
+          color: yellow;
+        }
+        
+        body {
+  background-image: url(cp.jpg);
+  background-repeat: no-repeat;
+  background-attachment:unset;
+  background-size: 20%;
+  background-position-x: 750px;
+  background-position-y: bottom;
+
+}
+      </style>
+    <div>
+        <button onclick="darkMode()">Darkmode</button>
+      </div>
+      <script>
+        function darkMode() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+        }
+      </script>
+
+</body>
+
+
+</html>
